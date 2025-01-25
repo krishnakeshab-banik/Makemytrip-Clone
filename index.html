@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakeMyTrip Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-left">
+            <img src="./mmt_dt_top_icon.avif" alt="MakeMyTrip" class="logo">
+            <div class="nav-item">Introducing <span class="highlight">myBiz</span> - MakeMyTrip for Business</div>
+        </div>
+
+        <div class="nav-center">
+            <div class="nav-item">My Trips</div>
+        </div>
+
+        <div class="nav-right">
+            <div class="login-section">
+                <button class="login-btn">Login or Create Account</button>
+            </div>
+            <div class="language-currency">
+                <span>IN | ENG | INR</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Booking Tabs with Icons -->
+    <div class="booking-tabs-container">
+        <div class="booking-tabs">
+            <button class="tab active"><i class="fas fa-plane"></i> Flights</button>
+            <button class="tab"><i class="fas fa-hotel"></i> Hotels</button>
+            <button class="tab"><i class="fas fa-home"></i> Villas & Apts</button>
+            <button class="tab"><i class="fas fa-suitcase-rolling"></i> Holiday Packages</button>
+            <button class="tab"><i class="fas fa-train"></i> Trains</button>
+            <button class="tab"><i class="fas fa-bus"></i> Buses</button>
+            <button class="tab"><i class="fas fa-taxi"></i> Cabs</button>
+            <button class="tab"><i class="fas fa-passport"></i> Visa</button>
+        </div>
+    </div>
+
+   <!-- Search Form Section -->
+   <div class="booking-container">
+    <!-- Trip Type Selection -->
+    <div class="trip-options">
+        <input type="radio" id="oneway" name="trip" checked>
+        <label for="oneway">ONEWAY</label>
+        <input type="radio" id="roundtrip" name="trip">
+        <label for="roundtrip">ROUND TRIP</label>
+        <input type="radio" id="multicity" name="trip">
+        <label for="multicity">MULTICITY</label>
+    </div>
+
+    <!-- Search Form Fields -->
+    <div class="search-form">
+        <div class="input-box">
+            <label for="from-airport">From</label>
+            <input
+                type="text"
+                id="from-airport"
+                placeholder="Type your departure city"
+                autocomplete="off"
+            />
+            <ul class="autocomplete-list" id="from-suggestions"></ul>
+        </div>
+        <div class="input-box">
+            <label for="to-airport">To</label>
+            <input
+                type="text"
+                id="to-airport"
+                placeholder="Type your destination city"
+                autocomplete="off"
+            />
+            <ul class="autocomplete-list" id="to-suggestions"></ul>
+        </div>
+        <div class="input-box">
+            <label>Departure</label>
+            <input type="date">
+        </div>
+        <div class="input-box">
+            <label>Return</label>
+            <input type="date">
+        </div>
+        <div class="input-box">
+            <label>Travellers</label>
+            <select>
+                <option>1 Traveller</option>
+                <option>2 Travellers</option>
+                <option>3 Travellers</option>
+            </select>
+        </div>
+    </div>
+
+
+        <!-- Fare Section -->
+        <div class="fare-section">
+            <span class="fare-label">Select a special fare</span>
+            <div class="fare-options">
+                <div class="fare-card active">Regular<span>Regular fares</span></div>
+                <div class="fare-card">Student<span>Extra discounts/baggage</span></div>
+                <div class="fare-card">Senior Citizen<span>Up to ₹600 off</span></div>
+                <div class="fare-card">Armed Forces<span>Up to ₹600 off</span></div>
+                <div class="fare-card">Doctor and Nurses<span>Up to ₹600 off</span></div>
+            </div>
+        </div>
+
+        <!-- Search Button -->
+        <button class="search-btn">SEARCH</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
