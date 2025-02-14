@@ -1,7 +1,3 @@
-Here's a well-structured README for your **MakeMyTrip Clone** project:  
-
----
-
 # MakeMyTrip Clone 🚀  
 
 A front-end clone of MakeMyTrip’s hero section, designed as part of the **Liftoff Club** recruitment session at **SRM University of Science and Technology**. This project showcases HTML, CSS, and JavaScript skills while replicating key UI elements of the MakeMyTrip website.  
