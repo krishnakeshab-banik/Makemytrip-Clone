@@ -15,7 +15,7 @@ This project is a self-developed front-end model that replicates the hero sectio
 
 ## 🚀 Live Demo  
 
-[Click here to view the project](https://krishnakeshab-banik.github.io/makemytrip_clone/) 🌐  
+[Click here to view the project](https://krishnakeshab-banik.github.io/Makemytrip-Clone/) 🌐  
 
 ## 🛠️ Tech Stack  
 
